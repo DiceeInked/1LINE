@@ -6,7 +6,7 @@
 
 - The language is heavily function-based.
 - Spaces, tabs, and line breaks are completely ignored by the language. They are only for organization and readability.
-- `//...` can be used for comments/notes.
+- `/TEXT/` can be used for comments/notes.
 - Parentheses with no function defining them are automatically treated as values (`val`).
 - Every executable piece of code must be contained inside a code block.
 - Source-code order does not determine logical execution order when block order numbers are used.
@@ -19,7 +19,7 @@
 flag()[CODE]
 ```
 
-`flag` is a normal code block with no special priority. It does not automatically run first.
+`flag` is a normal code block that runs the codes.
 
 Example:
 
@@ -43,7 +43,6 @@ reap(30)[CODE]
 reap(120)[CODE]
 ```
 
-Multiple `reap` blocks are allowed.
 
 ### `func`
 
